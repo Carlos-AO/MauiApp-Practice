@@ -4,5 +4,50 @@
         <name>CarListApp.Maui</name>
     </assembly>
     <members>
+        <member name="T:CarListApp.Maui.ViewModels.BaseViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:CarListApp.Maui.ViewModels.BaseViewModel.Title">
+            <inheritdoc cref="F:CarListApp.Maui.ViewModels.BaseViewModel.title"/>
+        </member>
+        <member name="P:CarListApp.Maui.ViewModels.BaseViewModel.IsLoading">
+            <inheritdoc cref="F:CarListApp.Maui.ViewModels.BaseViewModel.isLoading"/>
+        </member>
+        <member name="T:CarListApp.Maui.ViewModels.CarListViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:CarListApp.Maui.ViewModels.CarListViewModel.getCarListCommand">
+            <summary>The backing field for <see cref="P:CarListApp.Maui.ViewModels.CarListViewModel.GetCarListCommand"/>.</summary>
+        </member>
+        <member name="P:CarListApp.Maui.ViewModels.CarListViewModel.GetCarListCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:CarListApp.Maui.ViewModels.CarListViewModel.GetCarList"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsLoading">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsLoading" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsLoading">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsLoading" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsNotLoading">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsNotLoading" generated properties.</summary>
+        </member>
     </members>
 </doc>
