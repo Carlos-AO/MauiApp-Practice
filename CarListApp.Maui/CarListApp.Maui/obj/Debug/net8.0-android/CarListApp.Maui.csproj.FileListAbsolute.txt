@@ -1037,3 +1037,5 @@ C:\Users\calfa\Documents\GitHub\MauiPractice2\CarListApp.Maui\CarListApp.Maui\ob
 C:\Users\calfa\Documents\GitHub\MauiPractice2\CarListApp.Maui\CarListApp.Maui\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\calfa\Documents\GitHub\MauiPractice2\CarListApp.Maui\CarListApp.Maui\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\calfa\Documents\GitHub\MauiPractice2\CarListApp.Maui\CarListApp.Maui\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\calfa\Documents\GitHub\MauiPractice2\CarListApp.Maui\CarListApp.Maui\obj\Debug\net8.0-android\android\assets\CommunityToolkit.Mvvm.dll
+C:\Users\calfa\Documents\GitHub\MauiPractice2\CarListApp.Maui\CarListApp.Maui\obj\Debug\net8.0-android\android\assets\CommunityToolkit.Mvvm.pdb

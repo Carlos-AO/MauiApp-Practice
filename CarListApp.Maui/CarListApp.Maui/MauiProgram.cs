@@ -17,10 +17,9 @@ namespace CarListApp.Maui
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-#if DEBUG
             builder.Services.AddSingleton<CarService>();
-            builder.Services.AddSingleton<CarListViewModel>();#endif
-            builder.Services.AddSingleton<MainPage>();#endif
+            builder.Services.AddSingleton<CarListViewModel>();
+            builder.Services.AddSingleton<MainPage>();
 
             return builder.Build();
         }
