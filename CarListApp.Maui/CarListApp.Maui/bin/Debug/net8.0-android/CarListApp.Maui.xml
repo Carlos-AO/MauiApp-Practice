@@ -15,6 +15,10 @@
         </member>
         <member name="T:CarListApp.Maui.ViewModels.CarListViewModel">
             <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:CarListApp.Maui.ViewModels.CarListViewModel.IsRefreshing">
+            <inheritdoc cref="F:CarListApp.Maui.ViewModels.CarListViewModel.isRefreshing"/>
         </member>
         <member name="F:CarListApp.Maui.ViewModels.CarListViewModel.getCarListCommand">
             <summary>The backing field for <see cref="P:CarListApp.Maui.ViewModels.CarListViewModel.GetCarListCommand"/>.</summary>
@@ -34,6 +38,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsLoading">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsLoading" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
@@ -48,6 +55,9 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsNotLoading">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsNotLoading" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
         </member>
     </members>
 </doc>
