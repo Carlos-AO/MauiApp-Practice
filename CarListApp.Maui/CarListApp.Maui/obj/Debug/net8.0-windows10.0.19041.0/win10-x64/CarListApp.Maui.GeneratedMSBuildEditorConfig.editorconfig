@@ -41,3 +41,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CarListApp.Maui.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/calfa/Documents/GitHub/MauiPractice2/CarListApp.Maui/CarListApp.Maui/Views/CarDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarListApp.Maui.Views.CarDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CarDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CarDetailsPage.xaml
