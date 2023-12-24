@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CarListApp.Maui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+68b312c6de33105a306a61b6e873e6b40631d8c5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8e9068bf629405e49130d5e76fb852ff56e7e866")]
 [assembly: System.Reflection.AssemblyProductAttribute("CarListApp.Maui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CarListApp.Maui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
