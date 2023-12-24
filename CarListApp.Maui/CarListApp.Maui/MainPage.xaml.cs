@@ -8,6 +8,12 @@ namespace CarListApp.Maui
         {
             InitializeComponent();
             BindingContext = carListViewModel;
+
+            /*
+            // storage option 1 at MainPage.xaml.cs and option 2 at CarListViewModel.cs - option 1:
+            Preferences.Set("saveDetails", true);
+            var detailsSaved = Preferences.Get("saveDetails", false);
+            */
         }
 
 

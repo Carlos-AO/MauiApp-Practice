@@ -3,26 +3,28 @@ using CarListApp.Maui.Services;
 using CarListApp.Maui.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+//using CoreBluetooth;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace CarListApp.Maui.ViewModels
 {
     public partial class CarListViewModel : BaseViewModel
     {
-        private readonly CarService carService;
+        //private readonly CarService carService;
 
         public ObservableCollection<Car> Cars { get; private set; } = new ();
 
         public CarListViewModel(CarService carService)
         {
             Title = "Car List";
-            this.carService = carService;
+            //this.carService = carService;
         }
 
         [ObservableProperty]
@@ -39,9 +41,25 @@ namespace CarListApp.Maui.ViewModels
                 IsLoading = true;
                 if (Cars.Any()) Cars.Clear();
 
-                var cars = carService.GetCars();
+                //var cars = carService.GetCars();
+                var cars = App.CarService.GetCars();
 
                 foreach (var car in cars) Cars.Add(car);
+
+                /*
+                // storage option 1 at MainPage.xaml.cs and option 2 at CarListViewModel.cs - option 2:
+                string fileName = "carlist.json";
+                var serializedList = JsonSerializer.Serialize(cars);
+                File.WriteAllText(fileName, serializedList);
+
+                var rawText = File.ReadAllText(fileName);
+                //var carsFromText = JsonSerializer.Deserialize<Car[]>(rawText);
+                var carsFromText = JsonSerializer.Deserialize<List<Car>>(rawText);
+
+                string path = FileSystem.AppDataDirectory;
+                //string folder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                string folder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)
+                */
             }
             catch (Exception ex) 
             {
