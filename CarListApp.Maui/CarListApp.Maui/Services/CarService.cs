@@ -1,10 +1,5 @@
 ﻿using CarListApp.Maui.Models;
 using SQLite;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CarListApp.Maui.Services
 {
@@ -14,6 +9,7 @@ namespace CarListApp.Maui.Services
         SQLiteConnection conn;
         string _dbPath;
         public string StatusMessage;
+        int result = 0;
 
         public CarService(string dbPath)
         {
@@ -26,7 +22,7 @@ namespace CarListApp.Maui.Services
                 return;
 
             conn = new SQLiteConnection(_dbPath);
-            conn .CreateTable<Car>();
+            conn.CreateTable<Car>();
         }
 
         public List<Car> GetCars()
@@ -93,6 +89,52 @@ namespace CarListApp.Maui.Services
             }
             return new List<Car>();
 
+        }
+
+        public Car GetCar(int id)
+        {
+            try
+            {
+                Init();
+                return conn.Table<Car>().FirstOrDefault(q => q.Id == id);
+            }
+            catch (Exception)
+            {
+                StatusMessage = "Failed to retrive data.";
+            }
+            return null;
+        }
+
+        public int DeleteCar(int id)
+        {
+            try
+            {
+                Init();
+                return conn.Table<Car>().Delete(q => q.Id == id);
+            }
+            catch (Exception)
+            {
+                StatusMessage = "Failed to delete data.";
+            }
+            return 0;
+        }
+
+        public void AddCar(Car car)
+        {
+            try
+            {
+                Init();
+
+                if (car == null)
+                    throw new Exception("Invalid Card Record");
+
+                result = conn.Insert(car);
+                StatusMessage = result == 0 ? "Insert Failed" : "Insert Successful";
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = "Failed to Insert data.";
+            }
         }
     }
 }
