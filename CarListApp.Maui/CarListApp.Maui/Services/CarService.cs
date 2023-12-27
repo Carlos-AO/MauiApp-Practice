@@ -136,5 +136,22 @@ namespace CarListApp.Maui.Services
                 StatusMessage = "Failed to Insert data.";
             }
         }
+
+        public void UpdateCar(Car car)
+        {
+            try
+            {
+                Init();
+                if (car == null) 
+                    throw new Exception("Invalid Car REcord.");
+
+                result = conn.Update(car);
+                StatusMessage = result == 0 ? "Update failed." : "Update suscessful.";
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = "Failed to Update Data.";
+            }
+        }
     }
 }
