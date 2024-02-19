@@ -1,4 +1,4 @@
-# MauiPractice
+# MauPractice app
 
-a List App to practice with Maui
+A simple list app, adapted from a Maui course, and to understand the structure of the app.
 
