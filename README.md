@@ -1,4 +1,4 @@
-# Maui practice app
+# Maui app to practice and learn
 
-A simple list app, adapted from a Maui course, to understand the structure of the app.
+List app, adapted from a course, to understand its structure.
 
