@@ -1,4 +1,4 @@
-# MauiPractice2
+# MauiPractice
 
-Car List App yo Practice with Maui
+a List App to practice with Maui
 
